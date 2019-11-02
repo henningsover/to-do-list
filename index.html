@@ -8,15 +8,25 @@
 </head>
 
 <body>
-  <form id="todoForm">
-    <label for="activityInputField" class="activity-input-label">Ny aktivitet</label>
-    <input type="text" autocomplete="off" id="activityInputField">
-    <button type="submit" id="submitButton">Lägg till</button>
-  </form>
+  <div id="formFilterContainer">
+    <form id="todoForm">
+      <label for="activityInputField" class="activity-input-label">Ny aktivitet</label>
+      <div id="todoFormWrapper">
+        <input type="text" autocomplete="off" id="activityInputField" class="input-text">
+        <input type="date" id="dateSelect">
+        <select>
+          <option>Städ</option>
+          <option>Dekoration</option>
+          <option>Matlagning</option>
+        </select>
+        <button type="submit" id="submitButton">Lägg till</button>
+      </div>
+    </form>
 
-  <div id="filterWrapper">
-    <label for="filterByField" class="filter-label">Filtrera på</label>
-    <input type="text" autocomplete="off" id="filterByField">
+    <div id="filterWrapper">
+      <label for="filterByField" class="filter-label">Filtrera på</label>
+      <input type="text" autocomplete="off" id="filterByField" class="input-text">
+    </div>
   </div>
 
   <div id="activitiesContainer">

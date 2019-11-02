@@ -1,12 +1,25 @@
 * {
   box-sizing: border-box;
 }
+
+#formFilterContainer {
+  width: 280px;
+  background: red;
+  padding: 5px;
+}
+
 #todoForm {
   margin: 20px 0px 10px 0px;
 }
 
+#todoFormWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 label {
-  margin-bottom: 5px ;
+  margin-bottom: 5px;
 }
 
 .del-btn {
@@ -21,25 +34,35 @@ label {
   margin-left: auto;
 }
 
-input {
-  width: 200px;
+.input-text {
+  width: 270px;
+  display: block;
+}
+
+#dateSelect {
+  width: 120px;
 }
 
 .filter-label {
   display: block;
 }
+
 .activity-input-label {
   display: block;
 }
+
 .activities-list {
   width: 500px;
 }
+
 .list-row {
   margin: 10px 0;
 }
+
 .activity {
   display: flex;
 }
+
 .list-row-content {
   display: flex;
 }
