@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+#todoForm {
+  margin: 20px 0px 10px 0px;
+}
+
+label {
+  margin-bottom: 5px ;
+}
+
+.del-btn {
+  display: flex;
+  background-image: url("../assets/delete.png");
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+}
+
+input {
+  width: 200px;
+}
+
+.filter-label {
+  display: block;
+}
+.activity-input-label {
+  display: block;
+}
+.activities-list {
+  width: 500px;
+}
+.list-row {
+  margin: 10px 0;
+}
+.activity {
+  display: flex;
+}
+.list-row-content {
+  display: flex;
+}
