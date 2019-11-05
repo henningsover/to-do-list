@@ -8,13 +8,20 @@ body {
   background-size: cover;
   color: rgb(44, 151, 92);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 565px;
+}
+
+.body-content {
+  background: rgba(255, 0, 0, 0.664);
+  border: 2px double white;
 }
 
 #formFilterContainer {
   width: 300px;
-  background: rgba(255, 0, 0, 0.575);
+  /* background: rgba(255, 0, 0, 0.575); */
   padding: 5px;
-  border: 2px double white;
+  /* border: 2px double white; */
+  display: inline-block;
 }
 
 #todoForm {
@@ -59,7 +66,7 @@ label {
 
 #dateSelect {
   width: 195px;
-  margin-right: auto;
+  margin-right: 2px;
 }
 
 .filter-label {
@@ -114,7 +121,15 @@ label {
 }
 
 #activitiesContainer {
-  width: 560px;
-  background: rgba(255, 0, 0, 0.575);
-  border: 2px double white;
+  /* width: 565px; */
+  /* background: rgba(255, 0, 0, 0.575); */
+  /* border: 2px double white; */
+  /* padding: 5px; */
+  padding: 5px;
+  border-top: 2px solid white;
+}
+
+.santaImg {
+  width: 170px;
+  margin-left: 35px;
 }
