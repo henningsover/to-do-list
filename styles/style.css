@@ -2,10 +2,19 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("../assets/bgimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(44, 151, 92);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 #formFilterContainer {
-  width: 280px;
-  background: red;
+  width: 300px;
+  background: rgba(255, 0, 0, 0.575);
   padding: 5px;
+  border: 2px double white;
 }
 
 #todoForm {
@@ -24,23 +33,33 @@ label {
 
 .del-btn {
   display: flex;
-  background-image: url("../assets/delete.png");
-  height: 20px;
-  width: 20px;
+  background-image: url("../assets/deletebtn.jpg");
+  height: 19px;
+  width: 19px;
   border: none;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: auto;
+  /* margin-left: auto; */
+}
+
+.del-btn:hover {
+  border: 1px solid gray;
 }
 
 .input-text {
-  width: 270px;
+  width: 286px;
   display: block;
 }
 
+.list-category {
+  width: 75px;
+  margin-left: auto;
+}
+
 #dateSelect {
-  width: 120px;
+  width: 195px;
+  margin-right: auto;
 }
 
 .filter-label {
@@ -52,17 +71,50 @@ label {
 }
 
 .activities-list {
-  width: 500px;
+  width: 550px;
 }
 
 .list-row {
   margin: 10px 0;
 }
 
+.list-row-expired {
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.856);
+}
+
+.list-date {
+  width: 75px;
+}
+
 .activity {
+  width: 200px;
   display: flex;
 }
 
+.list-expired {
+  font-size: 10px;
+}
+
+/* make list-row-content hover */
+
 .list-row-content {
   display: flex;
+}
+
+.list-row-content:hover {
+  background: rgba(243, 179, 179, 0.562);
+}
+
+#filterBtnsWrapper {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#activitiesContainer {
+  width: 560px;
+  background: rgba(255, 0, 0, 0.575);
+  border: 2px double white;
 }

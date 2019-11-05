@@ -9,16 +9,18 @@
 
 <body>
   <div id="formFilterContainer">
+    <h1 class="headline">Julens alla bestyr</h1>
     <form id="todoForm">
       <label for="activityInputField" class="activity-input-label">Ny aktivitet</label>
       <div id="todoFormWrapper">
         <input type="text" autocomplete="off" id="activityInputField" class="input-text">
         <input type="date" id="dateSelect">
         <select>
-          <option>Städ</option>
-          <option>Dekoration</option>
-          <option>Matlagning</option>
+          <option value="clean">Städ</option>
+          <option value="decoration">Dekoration</option>
+          <option value="cooking">Matlagning</option>
         </select>
+        <!-- make submit button container -->
         <button type="submit" id="submitButton">Lägg till</button>
       </div>
     </form>
@@ -26,6 +28,16 @@
     <div id="filterWrapper">
       <label for="filterByField" class="filter-label">Filtrera på</label>
       <input type="text" autocomplete="off" id="filterByField" class="input-text">
+    </div>
+    <div id="filterBtnsWrapper">
+      <input type="radio" checked value="all" class="filterBtns" name="filterBtns">
+      <span>Alla</span>
+      <input type="radio" value="clean" class="filterBtns" name="filterBtns">
+      <span>Städ</span>
+      <input type="radio" value="decoration" class="filterBtns" name="filterBtns">
+      <span>Dekoration</span>
+      <input type="radio" value="cooking" class="filterBtns" name="filterBtns">
+      <span>Matlagning</span>
     </div>
   </div>
 
