@@ -56,13 +56,17 @@ select.addEventListener('change', function () {
 submitButton.addEventListener('click', function (event) {
   event.preventDefault()
   if (activityInputField.value !== '' && activityInputField.value !== null) {
-    const newActivity = {}
-    newActivity.name = activityInputField.value
-    newActivity.date = chosenDate
-    newActivity.category = chosenCategory
-    allActivities.push(newActivity)
-    setFormToDefault()
-    drawActivities()
+    if (chosenDate !== '' && chosenDate !== null) {
+      const newActivity = {}
+      newActivity.name = activityInputField.value
+      newActivity.date = chosenDate
+      newActivity.category = chosenCategory
+      allActivities.push(newActivity)
+      setFormToDefault()
+      drawActivities()
+    } else{
+      alert('Ange ett giltigt datum')
+    }
   }
 })
 
@@ -130,7 +134,7 @@ function drawActivities() {
 
     liRowContent.appendChild(activityName)
     liRowContent.appendChild(date)
-    if(Date.parse(activity.date) < Date.parse(defaultDate)) {
+    if (Date.parse(activity.date) < Date.parse(defaultDate)) {
       liRowContent.appendChild(expired)
     }
     liRowContent.appendChild(category)
