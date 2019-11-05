@@ -67,6 +67,8 @@ submitButton.addEventListener('click', function (event) {
     } else{
       alert('Ange ett giltigt datum')
     }
+  } else {
+    alert('Ange ett aktivitetsnamn')
   }
 })
 
