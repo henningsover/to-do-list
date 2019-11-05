@@ -6,21 +6,20 @@ body {
   background-image: url("../assets/bgimg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgb(44, 151, 92);
+  color: rgb(178, 197, 187);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   width: 565px;
 }
 
 .body-content {
-  background: rgba(255, 0, 0, 0.664);
+  background: rgba(60, 59, 99, 0.664);
   border: 2px double white;
+  border-radius: 5px;
 }
 
 #formFilterContainer {
   width: 300px;
-  /* background: rgba(255, 0, 0, 0.575); */
   padding: 5px;
-  /* border: 2px double white; */
   display: inline-block;
 }
 
@@ -47,7 +46,6 @@ label {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* margin-left: auto; */
 }
 
 .del-btn:hover {
@@ -62,6 +60,7 @@ label {
 .list-category {
   width: 75px;
   margin-left: auto;
+  margin-right: 10px;
 }
 
 #dateSelect {
@@ -103,8 +102,6 @@ label {
   font-size: 10px;
 }
 
-/* make list-row-content hover */
-
 .list-row-content {
   display: flex;
 }
@@ -121,10 +118,6 @@ label {
 }
 
 #activitiesContainer {
-  /* width: 565px; */
-  /* background: rgba(255, 0, 0, 0.575); */
-  /* border: 2px double white; */
-  /* padding: 5px; */
   padding: 5px;
   border-top: 2px solid white;
 }
