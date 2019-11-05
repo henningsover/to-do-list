@@ -24,7 +24,7 @@ let allActivities = [
     category: 'cooking'
   },
   {
-    name: 'Mata djuren',
+    name: 'Dammsuga',
     date: '2019-12-14',
     category: 'clean'
   }
@@ -99,16 +99,10 @@ function drawActivities() {
       return activity.category.includes(filterCategory)
     })
   }
-  console.log(activitiesToDraw)
 
   activitiesToDraw.forEach(function (activity, i) {
 
     const li = document.createElement('li')
-    // if (Date.parse(activity.date) < Date.parse(defaultDate)) {
-    //   li.classList.add('list-row-expired')
-    // } else {
-    //   li.classList.add('list-row')
-    // }
     li.classList.add('list-row')
     liRowContent = document.createElement('div')
     liRowContent.classList.add('list-row-content')
@@ -170,8 +164,3 @@ filterBtns.forEach(function (btn) {
     drawActivities()
   })
 })
-
-console.log(filterBtns.value)
-
-const date = new Date("1988-05-08")
-console.log(date.getUTCFullYear())
