@@ -39,12 +39,10 @@ if (currentDate.getDate() < 10) {
   defaultDate = currentDate.getFullYear() + "-" + (currentDate.getMonth() + 1) + '-' + currentDate.getDate()
   dateSelect.value = defaultDate
 }
-
 let chosenDate = defaultDate
 dateSelect.addEventListener('change', function () {
   chosenDate = dateSelect.value
 })
-
 
 const defaultCategoryText = 'clean'
 const defaultCategoryValue = select.options[select.selectedIndex].value
@@ -159,14 +157,13 @@ function removeActivity() {
   }
 }
 
-
 filterByField.addEventListener('input', function (event) {
   drawActivities()
 })
 
+
 filterBtns.forEach(function (btn) {
   btn.addEventListener('change', function () {
-
     drawActivities()
   })
 })
