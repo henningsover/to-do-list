@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>To do</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>To do</title>
-</head>
+  <body>
+    <div id="bodyContent" class="body-content">
+      <div id="formFilterContainer">
+        <h1 class="headline">Julens alla bestyr</h1>
+        <form id="todoForm">
+          <label for="activityInputField" class="activity-input-label"
+            >Ny aktivitet</label
+          >
+          <div id="todoFormWrapper">
+            <input
+              type="text"
+              autocomplete="off"
+              id="activityInputField"
+              class="input-text"
+            />
+            <input type="date" id="dateSelect" />
+            <select>
+              <option value="clean">Städ</option>
+              <option value="decoration">Dekoration</option>
+              <option value="cooking">Matlagning</option>
+            </select>
+            <!-- make submit button container -->
+            <button type="submit" id="submitButton">Lägg till</button>
+          </div>
+        </form>
 
-<body>
-  <div id="bodyContent" class="body-content">
-    <div id="formFilterContainer">
-      <h1 class="headline">Julens alla bestyr</h1>
-      <form id="todoForm">
-        <label for="activityInputField" class="activity-input-label">Ny aktivitet</label>
-        <div id="todoFormWrapper">
-          <input type="text" autocomplete="off" id="activityInputField" class="input-text">
-          <input type="date" id="dateSelect">
-          <select>
-            <option value="clean">Städ</option>
-            <option value="decoration">Dekoration</option>
-            <option value="cooking">Matlagning</option>
-          </select>
-          <!-- make submit button container -->
-          <button type="submit" id="submitButton">Lägg till</button>
+        <div id="filterWrapper">
+          <label for="filterByField" class="filter-label">Filtrera på</label>
+          <input
+            type="text"
+            autocomplete="off"
+            id="filterByField"
+            class="input-text"
+          />
         </div>
-      </form>
-
-      <div id="filterWrapper">
-        <label for="filterByField" class="filter-label">Filtrera på</label>
-        <input type="text" autocomplete="off" id="filterByField" class="input-text">
+        <div id="filterBtnsWrapper">
+          <input
+            type="radio"
+            checked
+            value="all"
+            class="filterBtns"
+            name="filterBtns"
+          />
+          <span>Alla</span>
+          <input
+            type="radio"
+            value="clean"
+            class="filterBtns"
+            name="filterBtns"
+          />
+          <span>Städ</span>
+          <input
+            type="radio"
+            value="decoration"
+            class="filterBtns"
+            name="filterBtns"
+          />
+          <span>Dekoration</span>
+          <input
+            type="radio"
+            value="cooking"
+            class="filterBtns"
+            name="filterBtns"
+          />
+          <span>Matlagning</span>
+        </div>
       </div>
-      <div id="filterBtnsWrapper">
-        <input type="radio" checked value="all" class="filterBtns" name="filterBtns">
-        <span>Alla</span>
-        <input type="radio" value="clean" class="filterBtns" name="filterBtns">
-        <span>Städ</span>
-        <input type="radio" value="decoration" class="filterBtns" name="filterBtns">
-        <span>Dekoration</span>
-        <input type="radio" value="cooking" class="filterBtns" name="filterBtns">
-        <span>Matlagning</span>
+      <img class="santaImg" src="assets/santaImg.png" />
+      <div id="activitiesContainer">
+        <h2 id="activitiesHeader">Att göra:</h2>
+        <ul id="activitiesList" class="activities-list"></ul>
       </div>
     </div>
-    <img class="santaImg" src="assets/santaImg.png">
-    <div id="activitiesContainer">
-      <h2 id="activitiesHeader">Att göra:</h2>
-      <ul id="activitiesList" class="activities-list"></ul>
-    </div>
-  </div>
-  <script type="application/javascript" src="javascript/main.js"></script>
-</body>
-
+    <audio controls src="assets/jingle.mp3" loop autoplay></audio>
+    <script type="application/javascript" src="javascript/main.js"></script>
+  </body>
 </html>
